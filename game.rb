@@ -12,6 +12,7 @@ class Game
     end
 end
 
+
 def name
     puts "Please enter your name "
     name1 = gets.chomp
@@ -26,24 +27,21 @@ end
 def player_assignment
     @X = rand(10)
     
-   
-   endif @X <= 5
-   @Anne.value = @value1
-   @Bob.value = @value2
-   puts ""
-   puts "#{Anne.name} is assigned #{@value1} and #{Bob.name} is assigned #{@value2}"
-   puts ""
-   else
-   @Anne.value = @value2
-   @Bob.value = @value1
-   puts ""
-   puts "#{Anne.name} is assigned #{@value2} and #{Bob.name} is assigned #{@value1}"
-   puts ""
-end
-
-def go
+    if @X <= 5
+        @player1.value = @value1
+        @player2.value = @value2
+        puts ""
+        puts "#{player1.name} is assigned #{@value1} and #{player2.name} is assigned #{@value2}"
+        puts ""
+        else
+        @player1.value = @value2
+        @player2.value = @value1
+        puts ""
+        puts "#{player1.name} is assigned #{@value2} and #{player2.name} is assigned #{@value1}"
+        puts ""
+    end
     
-        
+    def go
         
     end
     

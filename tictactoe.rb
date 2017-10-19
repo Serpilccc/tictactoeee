@@ -4,8 +4,8 @@ class Game
     
        def initialize
         @win=win
-        player1=Player.new("Anne")
-        player2=Player.new("Bob")
+        player1=Player.new
+        player2=Player.new
         @value1="X"
         @value2="O"
         
@@ -27,16 +27,16 @@ def player_assignment
     @X = rand(10)
     
     if @X <= 5
-        @Anne.value = @value1
-        @Bob.value = @value2
+        @player1.value = @value1
+        @player2.value = @value2
         puts ""
-        puts "#{Anne.name} is assigned #{@value1} and #{Bob.name} is assigned #{@value2}"
+        puts "#{player1.name} is assigned #{@value1} and #{player2.name} is assigned #{@value2}"
         puts ""
         else
-        @Anne.value = @value2
-        @Bob.value = @value1
+        @player1.value = @value2
+        @player2.value = @value1
         puts ""
-        puts "#{Anne.name} is assigned #{@value2} and #{Bob.name} is assigned #{@value1}"
+        puts "#{player1.name} is assigned #{@value2} and #{player2.name} is assigned #{@value1}"
         puts ""
     end
     
