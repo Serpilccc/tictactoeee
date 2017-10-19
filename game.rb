@@ -1,29 +1,59 @@
- class Game
-     #TO DO : créé 2 joueurs, créé un board 
-  def initialize (player1, player2)
-            @player1 = Player.new(player1)
-            @player2 = Player.new(player2)
-    #TO DO : créé 2 joueurs, créé un board
-      
-  end
 
-     def start
-            introduction
-            player_names
-            player_assignment
-            display_board(@winning)
-            play_game
-        end
-  def go
-    # TO DO : lance la partie
-  end
-
-  def turn
-    #TO DO : affiche le plateau, demande au joueur il joue quoi, vérifie si un joueur a gagné, passe au joueur suivant si la partie n'est pas finie
-      board
-  end
+class Game
+    attr_accessor :player1, :player2, :value1, :value2
+    
+    def initialize
+        @win=win
+        player1=Player.new("Anne")
+        player2=Player.new("Bob")
+        @value1="X"
+        @value2="O"
         
-
+    end
 end
 
-Game.new.go
+def name
+    puts "Please enter your name "
+    name1 = gets.chomp
+    puts ""
+    puts "Please enter the name of another player."
+    name2 = gets.chomp
+    
+    @player1.name = name1
+    @player2.name = name2
+end
+
+def player_assignment
+    @X = rand(10)
+    
+   
+   endif @X <= 5
+   @Anne.value = @value1
+   @Bob.value = @value2
+   puts ""
+   puts "#{Anne.name} is assigned #{@value1} and #{Bob.name} is assigned #{@value2}"
+   puts ""
+   else
+   @Anne.value = @value2
+   @Bob.value = @value1
+   puts ""
+   puts "#{Anne.name} is assigned #{@value2} and #{Bob.name} is assigned #{@value1}"
+   puts ""
+end
+
+def go
+    
+        
+        
+    end
+    
+    def turn
+        
+        
+    end
+    
+    
+end
+
+
+
